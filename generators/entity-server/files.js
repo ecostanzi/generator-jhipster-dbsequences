@@ -1,5 +1,5 @@
 const constants = require('generator-jhipster/generators/generator-constants');
-const SERVER_MAIN_SRC_CUSTOM_DIR = `${constants.MAIN_DIR}custom/`;
+const SERVER_MAIN_SRC_CUSTOM_DIR = `${constants.MAIN_DIR}java/`;
 
 const customFiles = {
     server: [
