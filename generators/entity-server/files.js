@@ -2,7 +2,7 @@ const constants = require('generator-jhipster/generators/generator-constants');
 const SERVER_MAIN_SRC_CUSTOM_DIR = `${constants.MAIN_DIR}custom/`;
 
 const customFiles = {
-    customserver: [
+    server: [
         {
             path: SERVER_MAIN_SRC_CUSTOM_DIR,
             templates: [
@@ -22,9 +22,8 @@ module.exports = {
 function writeFiles() {
     return {
         writeServerFilee() {
-            console.log("oooo!!")
             if (this.skipServer) return;
-            console.log(SERVER_MAIN_SRC_CUSTOM_DIR)
+            console.log("Overriding new entity picked up from template in " + SERVER_MAIN_SRC_CUSTOM_DIR)
 
             // write server side files
             this.writeFilesToDisk(customFiles, this, false);

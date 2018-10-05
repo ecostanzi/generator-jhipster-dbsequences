@@ -21,7 +21,6 @@ module.exports = class extends EntityServerGenerator {
     }
 
     get writing() {
-        console.log("eee!!")
         const phaseFromJHipster = super._writing();
         const myCustomPhase = writeFiles()
         return Object.assign(phaseFromJHipster, myCustomPhase);
