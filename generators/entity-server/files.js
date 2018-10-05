@@ -1,8 +1,7 @@
 const constants = require('generator-jhipster/generators/generator-constants');
-
 const SERVER_MAIN_SRC_CUSTOM_DIR = `${constants.MAIN_DIR}custom/`;
 
-const serverFiles = {
+const customFiles = {
     customserver: [
         {
             path: SERVER_MAIN_SRC_CUSTOM_DIR,
@@ -22,12 +21,13 @@ module.exports = {
 
 function writeFiles() {
     return {
-
-        writeServerFiles() {
+        writeServerFilee() {
+            console.log("oooo!!")
             if (this.skipServer) return;
+            console.log(SERVER_MAIN_SRC_CUSTOM_DIR)
 
             // write server side files
-            this.writeFilesToDisk(serverFiles, this, false);
+            this.writeFilesToDisk(customFiles, this, false);
 
         }
     };
