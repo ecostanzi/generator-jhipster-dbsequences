@@ -21,7 +21,8 @@ let importApiModelProperty = false;
 let importJsonIgnore = false;
 let importJsonIgnoreProperties = false;
 let importSet = false;
-const uniqueEnums = {}; %><%- include imports -%>
+const uniqueEnums = {}; %>
+<%- include imports -%>
 
 <%_ if (databaseType === 'cassandra') { _%>
 import org.springframework.data.annotation.Id;
