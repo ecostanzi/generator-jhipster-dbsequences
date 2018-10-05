@@ -1,10 +1,10 @@
 /* eslint-disable consistent-return */
 const chalk = require('chalk');
-const EntityClientGenerator = require('generator-jhipster/generators/entity-client');
+const EntityServerGenerator = require('generator-jhipster/generators/entity-server');
 const writeFiles = require('./files').writeFiles;
 
 
-module.exports = class extends EntityClientGenerator {
+module.exports = class extends EntityServerGenerator {
     constructor(args, opts) {
         super(args, Object.assign({ fromBlueprint: true }, opts)); // fromBlueprint variable is important
 
