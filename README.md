@@ -6,6 +6,29 @@
 
 This is a [JHipster](http://jhipster.github.io/) blueprint, that is meant to be used in a JHipster application.
 
+# How it works
+
+Insead of using the same `hibernate_sequence` for all entities this blueprint allows to have a single sequence for each hibernate entity. 
+
+Default jhipster code:
+
+```java
+@Id
+@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
+@SequenceGenerator(name = "sequenceGenerator")
+private Long id;
+```
+
+Blueprint code: 
+```java
+@Id
+@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
+@SequenceGenerator(name = "sequenceGenerator", sequenceName="project_seq")
+private Long id;
+```
+
+The sequence is also added into the liquibase xml changeset file
+
 # Prerequisites
 
 As this is a [JHipster](http://jhipster.github.io/) blueprint, we expect you have JHipster and its related tools already installed:
