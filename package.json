@@ -1,6 +1,6 @@
 {
   "name": "generator-jhipster-dbsequences",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a Jhipster blueprint to have a different database sequence for each database",
   "keywords": [
     "yeoman-generator",
