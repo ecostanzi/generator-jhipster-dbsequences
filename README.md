@@ -2,6 +2,10 @@
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > JHipster blueprint, a Jhipster blueprint to have a different database sequence for each database
 
+<aside class="warning">
+This is just a demo for testing how a blueprint works. Replacing a database sequence name in the hibernate entity does not require a blueprint and can be done with a module and a post entity hook. 
+</aside>
+
 # Introduction
 
 This is a [JHipster](http://jhipster.github.io/) blueprint, that is meant to be used in a JHipster application.
